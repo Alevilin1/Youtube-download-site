@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: "Hanken Grotesk", sans-serif;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#div-input {
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+    align-items: center;
+    width: 50rem;
+    background-color: #F8F8F8;
+    border-style: solid;
+    border-color: #CCCCCC;
+    border-radius: 10px;
+    border-width: 1px;
+}
+
+#div-input input {
+    margin: 10px;
+    height: 40px;
+    text-align: start;
+    width: 80%;
+}
+
+#div-conteudo {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+#mensagem-erro {
+    background-color: red;
+    border-radius: 8px;
+    width: 98%;
+    display: flex;
+    margin-bottom: 10px;
+    align-items: start;
+    justify-content: start;
+    text-align: start;
+    transition: ease;
+}
+
+#mensagem-erro p {
+    margin: 10px;
+}
+
+
+#div-input input::placeholder {
+    font-size: large;
+}
+
+#div-input input {
+    padding-left: 10px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: black;
+    border-width: 1px;
+    font-size: large;
+}
+
+#div-input button {
+    font-size: large;
+    margin: 10px;
+    height: 45px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    flex: 1;
+}
+
+#div-input button:hover {
+    transform: scale(1.05);
+}
+
+#div-input button:checked {
+    cursor: cell;
+}
+
+#lista-tutorial {
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+    justify-content: center;
+}
