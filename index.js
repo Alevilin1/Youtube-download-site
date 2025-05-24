@@ -15,7 +15,7 @@ async function baixandoVideo() {
     console.log(url.split('/'));
 
     if (url.split('/')[2] == "www.youtube.com") {
-        const requisicao = await fetch("http://localhost:3000/video", {
+        const requisicao = await fetch("https://d54e-2804-1468-880a-3300-5d7e-9037-b8d-e749.ngrok-free.app/video", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
