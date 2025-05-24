@@ -54,6 +54,10 @@
     font-size: large;
 }
 
+#div-input div {
+    margin: 20px;
+}
+
 #div-input input {
     padding-left: 10px;
     border-style: solid;
@@ -75,13 +79,47 @@
     flex: 1;
 }
 
-#div-input button:hover {
-    transform: scale(1.05);
+
+#div-loading {
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+    align-items: center;
+    width: 50rem;
+    background-color: #F8F8F8;
+    border-style: solid;
+    border-color: #CCCCCC;
+    border-radius: 10px;
+    border-width: 1px;
 }
 
-#div-input button:checked {
-    cursor: cell;
+@keyframes girar {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
+
+#div-loading div {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: girar 1s linear infinite;
+    margin: 20px;
+}
+
+
+#div-input button:active {
+    background-color: rgb(49, 43, 43);
+    transform: scale(0.95);
+}
+
+
 
 #lista-tutorial {
     display: flex;
